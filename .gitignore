@@ -1,0 +1,4 @@
+sistema-FIS/
+node_modules/
+dist/
+.env

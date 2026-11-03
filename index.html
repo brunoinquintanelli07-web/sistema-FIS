@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cartelera Montevideo</title>
+  <meta name="description" content="Actividades para personas mayores en Montevideo: buscá por categoría, zona y costo.">
+  <meta name="theme-color" content="#DDF1FA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
+
+  <header class="top" id="top">
+    <div class="wrap top__in">
+      <a class="brand" href="#/" aria-label="Cartelera Montevideo, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 40 28" aria-hidden="true">
+          <circle class="m1" cx="12" cy="14" r="11" fill="#8FD0EC"/>
+          <circle class="m2" cx="28" cy="14" r="11" fill="#F4A7C0" style="mix-blend-mode:multiply"/>
+          <circle class="m3" cx="20" cy="14" r="7" fill="#F28C28"/>
+        </svg>
+        <span>Cartelera Montevideo</span>
+      </a>
+      <div class="top__right">
+        <div class="size" role="group" aria-label="Tamaño de letra">
+          <button type="button" data-size="0" aria-label="Letra normal" aria-pressed="true">A</button>
+          <button type="button" data-size="1" aria-label="Letra grande" aria-pressed="false">A</button>
+          <button type="button" data-size="2" aria-label="Letra muy grande" aria-pressed="false">A</button>
+        </div>
+        <nav aria-label="Principal">
+          <a href="#/" id="nav-inicio">Actividades</a>
+          <a href="#/favoritas" id="nav-fav">Favoritas <span class="count" id="fav-count" aria-label="guardadas">0</span></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1"></main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p>Las actividades que se muestran son de ejemplo, para probar la cartelera.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span id="toast-msg"></span>
+    <button type="button" id="toast-undo" hidden>Deshacer</button>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
