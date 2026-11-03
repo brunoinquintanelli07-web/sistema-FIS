@@ -2,3 +2,8 @@ sistema-FIS/
 node_modules/
 dist/
 .env
+sistema-FIS/
+node_modules/
+dist/
+.env
+.env.*
